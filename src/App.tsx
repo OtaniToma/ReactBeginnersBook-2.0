@@ -17,7 +17,7 @@ class App extends Component {
         <header className="App-header">
 
           {/* オブジェクトに格納されたタグ属性値をまとめて渡す */}
-          <img {...logoOptions} />
+          <img {...logoOptions} alt="test"/>
 
           {/* if文に相当、前に置いた値がtrueであれば、次に続く値が評価される */}
           {title && <p>{title}</p>}
@@ -31,9 +31,7 @@ class App extends Component {
           ))}
 
           {/* 一定条件に一致するものだけを表示 */}
-          <ul>
-          {targets.filter(t => t.length >= 6).map(t => <li>{t}</li>)}
-          </ul>
+          {targets.filter(t => t.length >= 6).map(t => <>{t}</>)}
 
         </header>
       </div>

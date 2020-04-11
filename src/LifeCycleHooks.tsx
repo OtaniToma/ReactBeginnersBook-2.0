@@ -1,8 +1,9 @@
-import React, { FC, useState } from 'react';
+import React, { FC, useState, useEffect } from 'react';
 import { Button, Card, Statistic } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css'
 
 import './App.css';
+import { watch } from 'fs';
 
 const LifeCycleHooks: FC = () => {
   const [count, setCount] = useState(0);
@@ -18,7 +19,7 @@ const LifeCycleHooks: FC = () => {
   return (
     <div className="container">
       <header>
-        <h1>タイマー</h1>
+        <h1>カウンター</h1>
       </header>
       <Card>
         <Statistic className="number-board">

@@ -6,7 +6,8 @@ import './index.css';
 // import LifeCycle from './LifeCycle';
 // import CharacterList from './CharacterList';
 // import HOC from './HOC';
-import LifeCycleHooks from './LifeCycleHooks';
+// import LifeCycleHooks from './LifeCycleHooks';
+import LifeCycleEffectHook from './LifeCycleEffectHook';
 
 import * as serviceWorker from './serviceWorker';
 
@@ -17,7 +18,8 @@ ReactDOM.render(
     {/* <LifeCycle /> */}
     {/* <CharacterList /> */}
     {/* <HOC /> */}
-    <LifeCycleHooks />
+    {/* <LifeCycleHooks /> */}
+    <LifeCycleEffectHook />
   </React.StrictMode>,
   document.getElementById('root')
 );
